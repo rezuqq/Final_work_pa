@@ -10,49 +10,49 @@ int main() {
     scanf("%d, %d, %d, %d", &a, &b, &c, &d); // происходит ввод чисел с клавиатуры
 
 
-    int min1, min2, min3; //создание переменных для нахождения 3х минимальных чисел
+    int min1_1, min2_2, min3_3; //создание переменных для нахождения 3х минимальных чисел
 
-    min1 = a; // присваивание значений для инициализации переменных
-    min2 = b; 
-    min3 = c;
+    min1_1 = a; // присваивание значений для инициализации переменных
+    min2_2 = b; 
+    min3_3 = c;
 
-    if (b < min1) {
-        min3 = min2;
-        min2 = min1; // Условие для нахождения 3х минимальных чисел
-        min1 = b;
+    if (b < min1_1) {
+        min3_3 = min2_2;
+        min2_2 = min1_1; // Условие для нахождения 3х минимальных чисел
+        min1_1 = b;
     }
     else {
-        min2 = b;
-        min3 = a;
+        min2_2 = b;
+        min3_3 = a;
     }
 
-    if (c < min1) {
-        min3 = min2;
-        min2 = min1;
-        min1 = c;
+    if (c < min1_1) {
+        min3_3 = min2_2;
+        min2_2 = min1_1;
+        min1_1 = c;
     }
-    else if (c < min2) {
-        min3 = min2;
-        min2 = c;
+    else if (c < min2_2) {
+        min3_3 = min2_2;
+        min2_2 = c;
     }
     else {
-        min3 = c;
+        min3_3 = c;
     }
 
-    if (d < min1) {
-        min3 = min2;
-        min2 = min1;
-        min1 = d;
+    if (d < min1_1) {
+        min3_3 = min2_2;
+        min2_2 = min1_1;
+        min1_1 = d;
     }
-    else if (d < min2) {
-        min3 = min2;
-        min2 = d;
+    else if (d < min2_2) {
+        min3_3 = min2_2;
+        min2_2 = d;
     }
-    else if (d < min3) {
-        min3 = d;
+    else if (d < min3_3) {
+        min3_3 = d;
     }
 
-    printf("1 min number: %d\n", min1);// min2, min3);
+    printf("1 min number: %d\n", min1_1);// min2, min3);
 
     /*int min_sum = min1 + min2 + min3;
     
